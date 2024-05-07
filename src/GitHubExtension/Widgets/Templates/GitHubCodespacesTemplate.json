@@ -1,0 +1,54 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Configure Codespace",
+      "weight": "Bolder",
+      "size": "Medium"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "repository",
+      "label": "Select Repository:",
+      "placeholder": "Repository",
+      "choices": [],
+      "isRequired": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "devcontainer",
+      "label": "Select DevContainer:",
+      "placeholder": "DevContainer",
+      "choices": [],
+      "isRequired": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "machineType",
+      "label": "Select Machine Type:",
+      "placeholder": "Machine Type",
+      "choices": [],
+      "isRequired": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "region",
+      "label": "Select Region:",
+      "placeholder": "Region",
+      "choices": [],
+      "isRequired": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Create Codespace",
+      "data": {
+        "action": "createCodespace"
+      }
+    }
+  ]
+}

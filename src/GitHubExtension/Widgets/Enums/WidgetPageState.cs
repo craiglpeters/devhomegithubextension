@@ -10,4 +10,5 @@ public enum WidgetPageState
     Configure,
     Loading,
     Content,
+    CodespacesConfiguration // Added state for Codespaces configuration and selection
 }

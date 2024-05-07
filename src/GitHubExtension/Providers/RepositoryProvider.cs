@@ -1,4 +1,4 @@
-﻿// Copyright (c) Microsoft Corporation.
+// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 using GitHubExtension.Client;
@@ -8,6 +8,7 @@ using Octokit;
 using Serilog;
 using Windows.Foundation;
 using Windows.Storage.Streams;
+using System.Collections.Generic; // Added for handling lists
 
 namespace GitHubExtension.Providers;
 
